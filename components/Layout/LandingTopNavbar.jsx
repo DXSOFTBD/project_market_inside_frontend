@@ -109,12 +109,12 @@ const LandingTopNavbar = () => {
                     </li>
                     <li
                       className={
-                        router.asPath === "/register"
+                        router.asPath === "/dashboard"
                           ? "text-[16px] font-medium text-red-600"
                           : "text-[16px] font-medium text-white px-4 py-8 rounded-md"
                       }
                     >
-                      <NevagationLink url="/register" text="Register" />
+                      <NevagationLink url="/dashboard" text="Register" />
                     </li>
                   </ul>
                 </div>
