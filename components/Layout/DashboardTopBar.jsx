@@ -6,8 +6,6 @@ import { useEffect, useState } from "react";
 import logo from "@/public/assets/logo/logo.png";
 import Image from "next/image";
 
-
-
 export const NevagationLink = ({ url, text }) => {
   return (
     <Link className="text-white hover:text-white" href={url}>
@@ -33,12 +31,11 @@ const DashboardTopBar = () => {
     };
   }, []);
 
-
   return (
     <>
       <nav
         className={`sticky md:fixed top-0 z-10 w-full ${
-          isScrolled ? "shadow-lg bg-[#156A6B]" : "bg-[#156A6B]"
+          isScrolled ? "shadow-lg bg-[#371C07]" : "bg-[#371C07]"
         }`}
       >
         <div className="">
@@ -69,14 +66,23 @@ const DashboardTopBar = () => {
                 <div>
                   <ul className="lg:flex gap-[20px]">
                     <li
-                    className={
-                      router.asPath === "/"
-                        ? "text-[16px] font-medium text-red-600"
-                        : "text-[16px] font-medium text-white px-4 py-8 rounded-md"
-                    }
-                  >
-                    <NevagationLink url="/" text="Analytics" />
-                  </li>
+                      className={
+                        router.asPath === "/add-social"
+                          ? "text-[16px] font-medium text-red-600"
+                          : "text-[16px] font-medium text-white px-4 py-8 rounded-md"
+                      }
+                    >
+                      <NevagationLink url="/add-social" text="Add Social" />
+                    </li>
+                    <li
+                      className={
+                        router.asPath === "/"
+                          ? "text-[16px] font-medium text-red-600"
+                          : "text-[16px] font-medium text-white px-4 py-8 rounded-md"
+                      }
+                    >
+                      <NevagationLink url="/" text="Analytics" />
+                    </li>
                     <li
                       className={
                         router.asPath === "/planning"
@@ -98,7 +104,6 @@ const DashboardTopBar = () => {
                   </ul>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -108,4 +113,3 @@ const DashboardTopBar = () => {
 };
 
 export default DashboardTopBar;
-

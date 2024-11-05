@@ -5,7 +5,7 @@ const page = () => {
   return (
     <div className="flex w-full relative">
       <div className="relative left-0 top-0">
-        <div className="bg-[#156A6B] absolute h-screen md:static z-[10000] w-[200px]">
+        <div className="bg-gray-100 absolute h-screen md:static z-[10000] w-[250px] shadow-2xl">
           <DashboardLeftSideBar />
         </div>
       </div>

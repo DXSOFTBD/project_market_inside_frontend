@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
-// import logo from "../../public/logo/Logo.png";
+import logo from "@/public/assets/logo/logo.png";
 import Image from "next/image";
 import MobileDrawer from "@/components/Layout/LandingMobileDrawer";
 // import ProductPublic from "../Product/ProductPublic";
@@ -83,7 +83,7 @@ const LandingTopNavbar = () => {
               >
                 <div className="h-[100px] w-[120px] flex items-center text-white">
                   <Link href="/">
-                    {/* <Image className="" src={logo} alt="Logo" /> */}Logo
+                    <Image className="" src={logo} alt="Logo" />
                   </Link>
                 </div>
 
