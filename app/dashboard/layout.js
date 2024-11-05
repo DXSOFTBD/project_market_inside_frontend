@@ -1,8 +1,6 @@
+import DashboardTopBar from "@/components/Layout/DashboardTopBar";
 import localFont from "next/font/local";
 import "./../globals.css";
-import LandingTopNavbar from "@/components/Layout/LandingTopNavbar";
-import DashboardContainer from "@/components/Dashboard/DashboardContainer";
-import DashboardLeftSideBar from "@/components/Layout/DashboardLeftSideBar";
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -26,9 +24,8 @@ export default function DashboardLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      
+        <DashboardTopBar />
         {children}
-       
       </body>
     </html>
   );
